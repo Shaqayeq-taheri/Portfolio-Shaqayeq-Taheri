@@ -1,0 +1,38 @@
+@font-face {
+  font-family:"Raleway" ;
+  src: url('src/assets/fonts/Raleway/Raleway-VariableFont_wght.ttf') format('truetype')
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+  background-color: #faf8fc;
+color:#180128dc;
+}
+
+ body,html{
+
+  min-height: 100vh;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  line-height: 1.5;
+ }
+ ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+.page {
+  min-height: calc(100vh - (7rem + 5rem));
+}
