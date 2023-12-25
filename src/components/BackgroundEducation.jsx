@@ -8,7 +8,7 @@ import "react-vertical-timeline-component/style.min.css";
 
 function BackgroundEducation() {
   return (
-    <div className=" pb-20">
+    <div className=" mt-28">
       <h2 className="text-4xl text-center font-bold pb-20 pt-20 ">Education Background</h2>
       <VerticalTimeline>
         {/*    <VerticalTimelineElement
@@ -34,45 +34,45 @@ function BackgroundEducation() {
           iconStyle={{ background: "#F87171", color: "#fff" }}
           icon={<IoMdSchool fontSize={'60px'} className="bg-red-400 fill-white text-lg" />} 
         > {/* can not change the size of the icon!! */}
-          <h3 className="vertical-timeline-element-title p-1">
+          <h3 className="vertical-timeline-element-title p-2 bg-zinc-100 font-bold">
             Full-Stack Web Development Course
           </h3>
-          <h4 className="vertical-timeline-element-subtitle p-1">Online Course</h4>
-          <p className="p-1">
-            <ul>
+          <h4 className="vertical-timeline-element-subtitle p-2 bg-zinc-100">Online Course</h4>
+          <p className="p-2">
+            <ul className="bg-zinc-100 ">
               Front-end Development:
-              <li>HTML/CSS</li>
-              <li>JavaScript</li>
-              <li>React js</li>
+              <li className="bg-zinc-100">HTML/CSS</li>
+              <li className="bg-zinc-100">JavaScript</li>
+              <li className="bg-zinc-100">React js</li>
             </ul>
-            <ul>
+            <ul className="bg-zinc-100 ">
               Back-end Development:
-              <li>Node.js</li>
-              <li>Express.js</li>
-              <li>MongoDB</li>
+              <li className="bg-zinc-100">Node.js</li>
+              <li className="bg-zinc-100">Express.js</li>
+              <li className="bg-zinc-100">MongoDB</li>
             </ul>
           </p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
-          className="vertical-timeline-element--education"
+          className="vertical-timeline-element--education "
           date="Oct 2022 - Nov 2022"
           iconStyle={{ background: "#F87171", color: "#fff" }}
           icon={<IoMdSchool className="bg-red-400 fill-white" />} 
         >
-          <h3 className="vertical-timeline-element-title font-bold p-1">
+          <h3 className="vertical-timeline-element-title font-bold p-2 bg-zinc-100">
             Orientation Course for Digital Jobs
           </h3>
-          <h4 className="vertical-timeline-element-subtitle p-1">Online Course</h4>
+          <h4 className="vertical-timeline-element-subtitle p-2 bg-zinc-100">Online Course</h4>
 
-          <p className="p-1">
+          <p className="p-2 bg-zinc-100">
             <ul className="">
-              <li>
+              <li className="bg-zinc-100">
                 Introduction to Web-Development and HTML First steps in CSS
               </li>
-              <li>Online Marketing</li>
-              <li>Introduction to Cloud Computing</li>
-              <li>Introduction to Amazon Web Service</li>
-              <li>Occupational Knowledge Digital Professions within Germany</li>
+              <li className="bg-zinc-100">Online Marketing</li>
+              <li className="bg-zinc-100">Introduction to Cloud Computing</li>
+              <li className="bg-zinc-100">Introduction to Amazon Web Service</li>
+              <li className="bg-zinc-100">Occupational Knowledge Digital Professions within Germany</li>
             </ul>
           </p>
         </VerticalTimelineElement>
@@ -82,17 +82,17 @@ function BackgroundEducation() {
           iconStyle={{ background: "#F87171", color: "#fff" }}
           icon={<IoMdSchool className=" bg-red-400 fill-white" />} 
         >
-          <h3 className="vertical-timeline-element-title font-bold p-1">
+          <h3 className="vertical-timeline-element-title font-bold p-2 bg-zinc-100">
             Master of Artificial Intelligence
           </h3>
-          <h4 className="vertical-timeline-element-subtitle p-1">Master Degree</h4>
-          <p className="p-1">
+          <h4 className="vertical-timeline-element-subtitle p-2 bg-zinc-100">Master Degree</h4>
+          <p className="p-2 bg-zinc-100">
             <ul>
-              <li>
+              <li className="bg-zinc-100">
                 Extensive coursework in Neural Networks, Image Processing, Fuzzy
                 Logic, Machine Learning, and Advanced AI.
               </li>
-              <li>
+              <li className="bg-zinc-100">
                 Theses: Agent Based Framework in Semantic Web Content Mining.
               </li>
             </ul>
@@ -102,18 +102,18 @@ function BackgroundEducation() {
           className="vertical-timeline-element--education"
           date="Sep 2009 - Sep 2014"
           iconStyle={{ background: "#F87171", color: "#fff" }}
-          icon={<IoMdSchool className=" bg-red-400 fill-white" style={{ fontSize: '3rem' }} /> } 
+          icon={<IoMdSchool className=" bg-red-400 fill-white " style={{ fontSize: '3rem' }} /> } 
         >
-          <h3 className="vertical-timeline-element-title font-bold p-1">
+          <h3 className="vertical-timeline-element-title font-bold p-2 bg-zinc-100">
             Bachelor of Computer Engineering
           </h3>
-          <h4 className="vertical-timeline-element-subtitle p-1">
+          <h4 className="vertical-timeline-element-subtitle p-2 bg-zinc-100">
             Bachelor Degree
           </h4>
-          <p className="p-1">
-            <ul>
-              <li>4-year software engineering program completion</li>
-              <li>Expertise in operating systems and database design</li>
+          <p className="p-2 bg-zinc-100">
+            <ul >
+              <li  >4-year software engineering program completion</li>
+              <li className="bg-zinc-100">Expertise in operating systems and database design</li>
             </ul>
           </p>
         </VerticalTimelineElement>

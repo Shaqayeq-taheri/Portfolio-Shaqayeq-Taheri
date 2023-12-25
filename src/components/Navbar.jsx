@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { useState } from "react";
 
 function Navbar() {
@@ -38,7 +38,7 @@ function Navbar() {
     <div className="flex  " >
       <nav className="flex gap-8 text-xl bg-gray-200">
         {links.map(({id, link,path})=>(
-          <Link to={path} className="bg-gray-200" key={id}>{link}</Link>
+          <NavLink to={path} className="bg-gray-200" key={id}>{link}</NavLink>
         ))}
       </nav>
 

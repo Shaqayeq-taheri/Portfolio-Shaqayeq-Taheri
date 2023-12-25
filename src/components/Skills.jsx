@@ -1,5 +1,6 @@
 import React from "react";
-import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
+
+
 import {
   FaHtml5,
   FaCss3Alt,
@@ -32,6 +33,7 @@ const responsive = {
     items: 1,
   },
 };
+
 const icons = [
   <FaHtml5 size={90} className="fill-red-500  bg-slate-200" key="html5" />,
   <FaCss3Alt size={90} className="fill-blue-500  bg-slate-200" key="css3" />,
@@ -46,33 +48,32 @@ const icons = [
 
 function Skills() {
   return (
-    <div className="bg-gray-600 mt-20 mb-20">
-      <h2 className=" text-center font-bold text-3xl">
-        Skills and Language Proficency
-      </h2>
-
-      <Carousel
-        responsive={responsive}
-        arrows={true}
-        showDots={true}
-        infinite={true}
-        containerClass=""
-        removeArrowOnDeviceType={["tablet", "mobile"]}
-        className="max-w-5xl mx-auto  bg-slate-200 "
-        arrowClasses={{
-          next: "fas fa-chevron-right",
-          prev: "fas fa-chevron-left",
-        }}
-      >
-        {icons.map((icon) => (
-          <div
-            key={icon.key}
-            className="border bg-slate-200 p-10 mb-10 flex justify-center"
-          >
-            {icon}
-          </div>
-        ))}
-      </Carousel>
+    <div>
+      <div className="mt-28  h-auto pb-28 pt-20">
+        <h2 className=" text-center font-bold text-3xl mt-5 mb-5">
+          Skills 
+        </h2>
+        <Carousel
+          responsive={responsive}
+          arrows={true}
+          showDots={true}
+          infinite={true}
+          containerClass=""
+          removeArrowOnDeviceType={["tablet", "mobile"]}
+          className="max-w-4xl mx-auto border "
+     
+        >
+          {icons.map((icon) => (
+            <div
+              key={icon.key}
+              className="border  p-10 mb-10 flex justify-center"
+            >
+              {icon}
+            </div>
+          ))}
+        </Carousel>
+       
+      </div>
     </div>
   );
 }

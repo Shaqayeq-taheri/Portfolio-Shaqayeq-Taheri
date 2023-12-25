@@ -7,6 +7,7 @@ import BackgroundEducation from '../components/BackgroundEducation'
 import Skills from '../components/Skills'
 import Footer from '../components/Footer'
 import { useMediaQuery } from 'react-responsive';
+import Languages from '../components/Languages'
 
 
 
@@ -21,6 +22,7 @@ function Index() {
     
         <BackgroundEducation/> 
       <Skills/> 
+      <Languages/>
        {/*    <Projects/> */}
         <Footer/> 
     </div>
