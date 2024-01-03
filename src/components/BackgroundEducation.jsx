@@ -31,10 +31,11 @@ function BackgroundEducation() {
         <VerticalTimelineElement
           className="vertical-timeline-element--work "
           date=" Dec 2022 - Feb 2024"
+          dateClassName="bg-transparent"
           iconStyle={{ background: "#F87171", color: "#fff" }}
           icon={<IoMdSchool fontSize={'60px'} className="bg-red-400 fill-white text-lg" />} 
         > {/* can not change the size of the icon!! */}
-          <div className="shadow-xl bg-zinc-100 ">
+          <div className="shadow-2xl bg-zinc-100 ">
             <h3 className="vertical-timeline-element-title p-2 bg-zinc-100 font-bold ">
               Full-Stack Web Development Course
             </h3>
@@ -58,10 +59,11 @@ function BackgroundEducation() {
         <VerticalTimelineElement
           className="vertical-timeline-element--education "
           date="Oct 2022 - Nov 2022"
+          dateClassName="bg-transparent"
           iconStyle={{ background: "#F87171", color: "#fff" }}
           icon={<IoMdSchool className="bg-red-400 fill-white" />} 
         >
-          <div className="shadow-xl bg-zinc-100 ">
+          <div className="shadow-2xl bg-zinc-100 ">
             <h3 className="vertical-timeline-element-title font-bold p-2 bg-zinc-100">
               Orientation Course for Digital Jobs
             </h3>
@@ -82,10 +84,11 @@ function BackgroundEducation() {
         <VerticalTimelineElement
           className="vertical-timeline-element--education"
           date="Sep 2014 - Sep 2017"
+          dateClassName="bg-transparent"
           iconStyle={{ background: "#F87171", color: "#fff" }}
           icon={<IoMdSchool className=" bg-red-400 fill-white" />} 
         >
-          <div className="shadow-xl bg-zinc-100">
+          <div className="shadow-2xl bg-zinc-100">
             <h3 className="vertical-timeline-element-title font-bold p-2 bg-zinc-100">
               Master of Artificial Intelligence
             </h3>
@@ -106,10 +109,11 @@ function BackgroundEducation() {
         <VerticalTimelineElement
           className="vertical-timeline-element--education"
           date="Sep 2009 - Sep 2014"
+          dateClassName="bg-transparent"
           iconStyle={{ background: "#F87171", color: "#fff" }}
           icon={<IoMdSchool className=" bg-red-400 fill-white " style={{ fontSize: '3rem' }} /> } 
         >
-          <div className="shadow-xl bg-zinc-100">
+          <div className="shadow-2xl bg-zinc-100">
             <h3 className="vertical-timeline-element-title font-bold p-2 bg-zinc-100">
               Bachelor of Computer Engineering
             </h3>

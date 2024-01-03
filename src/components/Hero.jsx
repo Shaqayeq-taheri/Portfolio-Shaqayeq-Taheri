@@ -2,7 +2,7 @@ import React from 'react'
 
 function Hero() {
   return (
-    <div>
+    <div>Hero
      <div className="flex  justify-center  mt-16 gap-5">
         {/* html card */}
         <div
