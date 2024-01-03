@@ -1,5 +1,3 @@
-import React from "react";
-
 
 import {
   FaHtml5,
@@ -13,6 +11,8 @@ import { SiMongodb, SiInsomnia } from "react-icons/si";
 import { BiLogoTailwindCss } from "react-icons/bi";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+
+
 
 const responsive = {
   superLargeDesktop: {
@@ -49,8 +49,8 @@ const icons = [
 function Skills() {
   return (
     <div>
-      <div className="mt-28  h-auto pb-28 pt-20">
-        <h2 className=" text-center font-bold text-3xl mt-5 mb-5">
+      <div className="mt-28  h-auto pb-32 pt-16 bg-zinc-200">
+        <h2 className=" text-center font-bold text-3xl mt-5 mb-5 bg-zinc-200">
           Skills 
         </h2>
         <Carousel
@@ -58,15 +58,18 @@ function Skills() {
           arrows={false}
           showDots={true}
           infinite={true}
-          containerClass=""
-          removeArrowOnDeviceType={["tablet", "mobile"]}
-          className="max-w-3xl mx-auto "
-     
+          className="max-w-3xl mx-auto mt-10 shadow-2xl hover:shadow-lg"
+          autoPlay={true}
+          autoPlaySpeed={4000} // Adjust the speed as needed
+  
+          customTransition="all 1s linear"
+        
+        
         >
           {icons.map((icon) => (
             <div
               key={icon.key}
-              className=" p-10 mb-10 flex justify-center"
+              className=" p-10 mb-10 flex justify-center "
             >
               {icon}
             </div>
