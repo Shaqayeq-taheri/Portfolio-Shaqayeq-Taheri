@@ -35,15 +35,15 @@ const responsive = {
 };
 
 const icons = [
-  <FaHtml5 size={90} className="fill-red-500  bg-slate-200" key="html5" />,
-  <FaCss3Alt size={90} className="fill-blue-500  bg-slate-200" key="css3" />,
-  <DiJavascript size={90} className="fill-yellow-500  bg-slate-200" key="javascript" />,
-  <FaReact size={90} className="fill-blue-400  bg-slate-200" key="react" />,
-  <SiMongodb size={90} className="fill-green-800  bg-slate-200" key="mongodb" />,
-  <FaNodeJs size={90} className="fill-green-600  bg-slate-200" key="nodeJs" />,
-  <SiInsomnia size={90} className="fill-purple-900  bg-slate-200" key="insomnia" />,
-  <BiLogoTailwindCss size={90} className="fill-blue-400  bg-slate-200" key="tailwind-css" />,
-  <FaBootstrap size={90} className="fill-purple-600  bg-slate-200" key="bootstrap" />,
+  <FaHtml5 size={90} className="fill-red-500 " key="html5" />,
+  <FaCss3Alt size={90} className="fill-blue-500 " key="css3" />,
+  <DiJavascript size={90} className="fill-yellow-500 " key="javascript" />,
+  <FaReact size={90} className="fill-blue-400 " key="react" />,
+  <SiMongodb size={90} className="fill-green-800 " key="mongodb" />,
+  <FaNodeJs size={90} className="fill-green-600 " key="nodeJs" />,
+  <SiInsomnia size={90} className="fill-purple-900 " key="insomnia" />,
+  <BiLogoTailwindCss size={90} className="fill-blue-400 " key="tailwind-css" />,
+  <FaBootstrap size={90} className="fill-purple-600 " key="bootstrap" />,
 ];
 
 function Skills() {
@@ -55,18 +55,18 @@ function Skills() {
         </h2>
         <Carousel
           responsive={responsive}
-          arrows={true}
+          arrows={false}
           showDots={true}
           infinite={true}
           containerClass=""
           removeArrowOnDeviceType={["tablet", "mobile"]}
-          className="max-w-4xl mx-auto border "
+          className="max-w-3xl mx-auto "
      
         >
           {icons.map((icon) => (
             <div
               key={icon.key}
-              className="border  p-10 mb-10 flex justify-center"
+              className=" p-10 mb-10 flex justify-center"
             >
               {icon}
             </div>
