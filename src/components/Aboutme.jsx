@@ -12,7 +12,7 @@ function Aboutme() {
 <button  className="text-xl mx-auto md:mx-0  w-48 bg-rose-100 hover:bg-rose-50 transition delay-100 p-4 ">My CV</button>
       
       </div>         
-    <img src="src/assets/images/IMG_0741-1-removebg-preview.png" alt="" className="  rounded-full order-first md:order-last mb-2 mt-10 md:mt-0 md:mb-20 p-1" style={{width:'250px', height:'250px' }} />
+    <img src="src/assets/images/photo_2024-01-04_00-17-57.jpg" alt="" className="  rounded-full order-first md:order-last mb-2 mt-10 md:mt-0 md:mb-20 p-1" style={{width:'250px', height:'250px' }} />
     {/* I used the md:order-last class, which will override the order-first class for screen sizes greater than or equal to 768px. */}
     </div>
     </div>
