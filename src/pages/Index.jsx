@@ -7,6 +7,7 @@ import Skills from "../components/Skills";
 import Languages from "../components/Languages";
 import ContactMe from "../components/ContactMe";
 
+
 function Index() {
   return (
     <div>
@@ -17,6 +18,7 @@ function Index() {
       <Languages />
       <Projects />
       <ContactMe/>
+   
     </div>
   );
 }

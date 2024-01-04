@@ -1,33 +1,35 @@
-import React from "react";
 import { Card } from 'flowbite-react';
+import { IoArrowForwardSharp } from "react-icons/io5";
 
 function Projects() {
   return <div>
     <h2 className="text-4xl text-center font-bold pt-10 ">Projects</h2>
-    <div className=" pt-20 pb-20 flex gap-16 justify-center">
+    <div className=" pt-20 pb-20 flex gap-16 justify-center flex-wrap">
       <Card
-        className="max-w-sm p-1 h-72 shadow-2xl hover:shadow-lg hover:animate-bounce "
+        className="max-w-sm  h-72 shadow-2xl hover:shadow-lg hover:animate-pulse rounded-md  "
         imgAlt="yoga and meditation"
         imgSrc="src/assets/images/YogaAndMeditation.png"
       >
-        <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+        <h5 className="text-2xl text-center font-bold tracking-tight  pt-3">
       Yoga and Meditation
         </h5>
-        <p className="font-normal text-gray-700 dark:text-gray-400">
-      <a target="blank" href="https://yoga-and-meditation.netlify.app/">Go to website</a>
-        </p>
+       
+      <div className='flex items-center justify-center gap-2 '>
+        <a target="blank" className='p-2' href="https://yoga-and-meditation.netlify.app/">Go to website  </a>
+        
+          <IoArrowForwardSharp className=' animate-ping' size={15} style={{ animationDuration: '2s' }} />
+      </div>
       </Card>
       <Card
-        className="max-w-sm p-1 shadow-2xl hover:shadow-lg hover:animate-pulse"
+        className="max-w-sm h-72 shadow-2xl hover:shadow-lg hover:animate-pulse rounded-2xl  "
         imgAlt="yoga and meditation"
         imgSrc="src/assets/images/BioBaumBauer.png"
+      
       >
-        <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+        <h5 className="text-2xl text-center font-bold tracking-tight  pt-3">
       Bio Baum Bauer
         </h5>
-        <p className="font-normal text-gray-700 dark:text-gray-400">
-          
-        </p>
+       <a href="" className=''></a>
       </Card>
     </div>
 
