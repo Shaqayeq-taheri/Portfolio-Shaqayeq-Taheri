@@ -5,7 +5,7 @@ import EducationalBackground from "../components/EducationalBackground";
 import Skills from "../components/Skills";
 import Languages from "../components/Languages";
 import ContactMe from "../components/ContactMe";
-import SocialLinks from "../components/SocialLinks";
+
 
 function Index() {
   return (
@@ -18,7 +18,7 @@ function Index() {
       <Languages />
 
       <ContactMe />
-      <SocialLinks />
+    
     </div>
   );
 }

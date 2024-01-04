@@ -1,5 +1,5 @@
-import { Link, NavLink } from "react-router-dom";
-import { useState } from "react";
+import { NavLink } from "react-router-dom";
+
 
 function Navbar() {
 
@@ -29,23 +29,19 @@ function Navbar() {
       path:'/contactme'
     },
   ];
-  return <div className="flex justify-between p-5 bg-gray-200">
+  return(
 
-    <div>
-      Shaqayeq Taheri
-    </div>
   
-    <div className="flex  " >
-      <nav className="flex gap-8 text-xl bg-gray-200">
+    <>
+      <nav className="flex justify-evenly gap-8 text-2xl  bg-slate-200 p-5 ">
         {links.map(({id, link,path})=>(
-          <NavLink to={path} className="bg-gray-200" key={id}>{link}</NavLink>
+          <NavLink to={path} className="bg-slate-200" key={id}>{link}</NavLink>
         ))}
       </nav>
 
       
-    </div>
-  
-  </div>;
+    </>
+  )
 }
 
 export default Navbar;

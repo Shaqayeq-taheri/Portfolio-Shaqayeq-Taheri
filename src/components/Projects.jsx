@@ -4,9 +4,9 @@ import { IoArrowForwardSharp } from "react-icons/io5";
 function Projects() {
   return <div className='mt-40 pt-8 pb-36 bg-zinc-100'>
     <h2 className="text-4xl text-center font-bold pt-10 bg-zinc-100">Projects</h2>
-    <div className="pb-36 pt-20 flex gap-16 justify-center flex-wrap bg-zinc-100">
+    <div className="pb-36 pt-32 flex gap-20 justify-center flex-wrap bg-zinc-100">
       <Card
-        className="max-w-lg  h-96 shadow-2xl hover:shadow-lg hover:animate-pulse rounded-md  "
+        className="max-w-lg  h-96 shadow-2xl hover:shadow-lg hover:animate-pulse rounded-2xl  "
         imgAlt="yoga and meditation"
         imgSrc="src/assets/images/YogaAndMeditation.png"
       >
@@ -14,7 +14,7 @@ function Projects() {
       Yoga and Meditation
         </h5>
        
-      <div className='flex items-center justify-center gap-2 '>
+      <div className='flex items-center justify-center gap-2  '>
         <a target="blank" className='p-2' href="https://yoga-and-meditation.netlify.app/">Go to website  </a>
         
           <IoArrowForwardSharp className=' animate-ping' size={15} style={{ animationDuration: '2s' }} />
