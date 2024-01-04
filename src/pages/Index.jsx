@@ -13,9 +13,10 @@ function Index() {
       <Navbar />
       <Aboutme />
       <EducationalBackground />
+      <Projects />
       <Skills />
       <Languages />
-      <Projects />
+
       <ContactMe />
       <SocialLinks />
     </div>

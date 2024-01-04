@@ -49,8 +49,8 @@ const icons = [
 function Skills() {
   return (
     <div>
-      <div className="mt-28  h-auto pb-32 pt-16 bg-zinc-100">
-        <h2 className=" text-center font-bold text-3xl mt-5 mb-5 bg-zinc-100">
+      <div className="mt-10 h-auto pb-32 pt-10 ">
+        <h2 className=" text-center font-bold text-4xl mt-5 mb-5 ">
           Skills 
         </h2>
         <Carousel
@@ -58,7 +58,7 @@ function Skills() {
           arrows={false}
           showDots={true}
           infinite={true}
-          className="max-w-3xl mx-auto mt-10 shadow-2xl hover:shadow-lg"
+          className="max-w-3xl mx-auto mt-10"
           autoPlay={true}
           autoPlaySpeed={4000} // Adjust the speed as needed
   
@@ -69,7 +69,7 @@ function Skills() {
           {icons.map((icon) => (
             <div
               key={icon.key}
-              className=" border-l p-10 mb-10 flex justify-center "
+              className=" border-l border-r p-10 mb-10 flex justify-center "
             >
               {icon}
             </div>
