@@ -2,9 +2,9 @@ import { Card } from 'flowbite-react';
 import { IoArrowForwardSharp } from "react-icons/io5";
 
 function Projects() {
-  return <div>
+  return <div className='pt-10 pb-36'>
     <h2 className="text-4xl text-center font-bold pt-10 ">Projects</h2>
-    <div className=" pt-20 pb-20 flex gap-16 justify-center flex-wrap">
+    <div className="pb-36 pt-20 flex gap-16 justify-center flex-wrap">
       <Card
         className="max-w-sm  h-72 shadow-2xl hover:shadow-lg hover:animate-pulse rounded-md  "
         imgAlt="yoga and meditation"

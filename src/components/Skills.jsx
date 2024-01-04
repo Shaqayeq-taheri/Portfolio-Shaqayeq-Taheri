@@ -69,7 +69,7 @@ function Skills() {
           {icons.map((icon) => (
             <div
               key={icon.key}
-              className=" p-10 mb-10 flex justify-center "
+              className=" border-l p-10 mb-10 flex justify-center "
             >
               {icon}
             </div>
