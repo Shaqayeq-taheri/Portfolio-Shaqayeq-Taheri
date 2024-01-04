@@ -49,8 +49,8 @@ const icons = [
 function Skills() {
   return (
     <div>
-      <div className="mt-28  h-auto pb-32 pt-16 bg-zinc-200">
-        <h2 className=" text-center font-bold text-3xl mt-5 mb-5 bg-zinc-200">
+      <div className="mt-28  h-auto pb-32 pt-16 bg-zinc-100">
+        <h2 className=" text-center font-bold text-3xl mt-5 mb-5 bg-zinc-100">
           Skills 
         </h2>
         <Carousel
