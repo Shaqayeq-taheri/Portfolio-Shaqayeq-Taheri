@@ -4,7 +4,7 @@ import Navbar from "../src/components/Navbar";
 import Aboutme from "../src/components/Aboutme";
 import Skills from "../src/components/Skills";
 import Projects from "../src/components/Projects";
-import BackgroundEducation from "../src/components/BackgroundEducation";
+import EducationalBackground from "../src/components/EducationalBackground";
 import ContactMe from "../src/components/ContactMe";
 import Languages from "./components/Languages";
 
@@ -25,7 +25,7 @@ function App() {
             <Route path="/aboutme" element={<Aboutme />} />
             <Route
               path="/backgroundEducation"
-              element={<BackgroundEducation />}
+              element={<EducationalBackground/>}
             />
             <Route path="/skills" element={<Skills />} />
             <Route path="/languages" element={<Languages />} />

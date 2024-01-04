@@ -21,7 +21,7 @@ function Navbar() {
       path:'/skills'
     },
     {id:4,
-    link:'Background Education',
+    link:'Educational Background',
   path:'/backgroundEducation'},
     {
       id: 5,

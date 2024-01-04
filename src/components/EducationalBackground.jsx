@@ -8,8 +8,8 @@ import "react-vertical-timeline-component/style.min.css";
 
 function BackgroundEducation() {
   return (
-    <div className=" mt-28">
-      <h2 className="text-4xl text-center font-bold pb-20 pt-20 ">Education Background</h2>
+    <div className=" mt-16">
+      <h2 className="text-4xl text-center font-bold pb-28 ">Educational Background</h2>
       <VerticalTimeline>
         {/*    <VerticalTimelineElement
           className="vertical-timeline-element--work"
