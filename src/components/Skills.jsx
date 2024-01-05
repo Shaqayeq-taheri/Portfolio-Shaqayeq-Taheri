@@ -5,9 +5,11 @@ import {
   FaReact,
   FaBootstrap,
   FaNodeJs,
+  FaGitAlt,
+  FaLinux
 } from "react-icons/fa";
 import { DiJavascript } from "react-icons/di";
-import { SiMongodb, SiInsomnia } from "react-icons/si";
+import { SiMongodb, SiInsomnia,SiExpress } from "react-icons/si";
 import { BiLogoTailwindCss } from "react-icons/bi";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
@@ -35,15 +37,21 @@ const responsive = {
 };
 
 const icons = [
-  <FaHtml5 size={90} className="fill-red-500 " key="html5" />,
-  <FaCss3Alt size={90} className="fill-blue-500 " key="css3" />,
-  <DiJavascript size={90} className="fill-yellow-500 " key="javascript" />,
-  <FaReact size={90} className="fill-blue-400 " key="react" />,
-  <SiMongodb size={90} className="fill-green-800 " key="mongodb" />,
-  <FaNodeJs size={90} className="fill-green-600 " key="nodeJs" />,
-  <SiInsomnia size={90} className="fill-purple-900 " key="insomnia" />,
-  <BiLogoTailwindCss size={90} className="fill-blue-400 " key="tailwind-css" />,
-  <FaBootstrap size={90} className="fill-purple-600 " key="bootstrap" />,
+  { icon: <FaHtml5 size={90} className="fill-red-500" />, name: 'HTML5' },
+  { icon: <FaCss3Alt size={90} className="fill-blue-500" />, name: 'CSS3' },
+  { icon: <DiJavascript size={90} className="fill-yellow-500" />, name: 'JavaScript' },
+  { icon: <FaReact size={90} className="fill-blue-400" />, name: 'React' },
+  { icon: <SiMongodb size={90} className="fill-green-800" />, name: 'MongoDB' },
+  { icon: <FaNodeJs size={90} className="fill-green-600" />, name: 'Node.js' },
+  {icon:  <SiExpress  size={90}  />, name:'Express js'},
+  { icon: <SiInsomnia size={90} className="fill-purple-900" />, name: 'Insomnia' },
+  { icon: <BiLogoTailwindCss size={90} className="fill-blue-400" />, name: 'Tailwind CSS' },
+  { icon: <FaBootstrap size={90} className="fill-purple-600" />, name: 'Bootstrap' },
+ 
+  {icon:<FaGitAlt size={90} />, name:'Git'},
+  {icon:<FaLinux size={90} /> ,name: 'Linux'}
+
+
 ];
 
 function Skills() {
@@ -61,17 +69,21 @@ function Skills() {
           className="max-w-3xl mx-auto mt-10"
           autoPlay={true}
           autoPlaySpeed={4000} // Adjust the speed as needed
+          swipeable={true}
   
-          customTransition="all 1s linear"
+          customTransition="all 1s ease-out"
         
         
         >
-          {icons.map((icon) => (
+          {icons.map(({icon,name},index) => (
             <div
-              key={icon.key}
+              key={index}
               className=" border-l border-r p-10 mb-10 flex justify-center "
             >
-              {icon}
+               <div>
+                {icon}
+                <p className="text-center pt-3">{name}</p>
+              </div>
             </div>
           ))}
         </Carousel>
