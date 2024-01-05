@@ -7,8 +7,10 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 
 function BackgroundEducation() {
+
   return (
-    <div className=" mt-16">
+    <div className="mt-32 pt-32" id="backgroundEducation">
+      
       <h2 className="text-4xl text-center font-bold pb-28 ">Educational Background</h2>
       <VerticalTimeline>
         {/*    <VerticalTimelineElement
@@ -32,7 +34,7 @@ function BackgroundEducation() {
           className="vertical-timeline-element--work "
           date=" Dec 2022 - Feb 2024"
           dateClassName="bg-transparent"
-          iconStyle={{ background: "#F87171", color: "#fff" }}
+          iconStyle={{ background: "#F87171", color: "#ffff" }}
           icon={<IoMdSchool fontSize={'60px'} className="bg-red-400 fill-white text-lg" />} 
         > {/* can not change the size of the icon!! */}
           <div className="shadow-2xl bg-zinc-100 hover:shadow-lg ">
@@ -40,20 +42,20 @@ function BackgroundEducation() {
               Full-Stack Web Development Course
             </h3>
             <h4 className="vertical-timeline-element-subtitle p-2 bg-zinc-100 border-b-2">Online Course</h4>
-            <p className="p-2 bg-zinc-100  ">
-              <ul className="bg-zinc-100 ">
+       
+              <ul className="bg-zinc-100 p-2 ">
                 Front-end Development:
                 <li className="bg-zinc-100">HTML/CSS</li>
                 <li className="bg-zinc-100">JavaScript</li>
                 <li className="bg-zinc-100">React js</li>
               </ul>
-              <ul className="bg-zinc-100 ">
+              <ul className="bg-zinc-100 p-2">
                 Back-end Development:
                 <li className="bg-zinc-100">Node.js</li>
                 <li className="bg-zinc-100">Express.js</li>
                 <li className="bg-zinc-100">MongoDB</li>
               </ul>
-            </p>
+        
           </div>
         </VerticalTimelineElement>
         <VerticalTimelineElement
@@ -68,8 +70,8 @@ function BackgroundEducation() {
               Orientation Course for Digital Jobs
             </h3>
             <h4 className="vertical-timeline-element-subtitle p-2 bg-zinc-100 border-b-2">Online Course</h4>
-            <p className="p-2 bg-zinc-100 ">
-              <ul className="">
+
+              <ul className="p-2 bg-zinc-100 ">
                 <li className="bg-zinc-100">
                   Introduction to Web-Development and HTML First steps in CSS
                 </li>
@@ -78,7 +80,7 @@ function BackgroundEducation() {
                 <li className="bg-zinc-100">Introduction to Amazon Web Service</li>
                 <li className="bg-zinc-100">Occupational Knowledge Digital Professions within Germany</li>
               </ul>
-            </p>
+    
           </div>
         </VerticalTimelineElement>
         <VerticalTimelineElement
@@ -93,8 +95,8 @@ function BackgroundEducation() {
               Master of Artificial Intelligence
             </h3>
             <h4 className="vertical-timeline-element-subtitle p-2 bg-zinc-100 border-b-2">Master Degree</h4>
-            <p className="p-2 bg-zinc-100">
-              <ul>
+
+              <ul className="bg-zinc-100  p-2">
                 <li className="bg-zinc-100">
                   Extensive coursework in Neural Networks, Image Processing, Fuzzy
                   Logic, Machine Learning, and Advanced AI.
@@ -103,7 +105,7 @@ function BackgroundEducation() {
                   Theses: Agent Based Framework in Semantic Web Content Mining.
                 </li>
               </ul>
-            </p>
+          
           </div>
         </VerticalTimelineElement>
         <VerticalTimelineElement
@@ -120,12 +122,12 @@ function BackgroundEducation() {
             <h4 className="vertical-timeline-element-subtitle p-2 bg-zinc-100 border-b-2">
               Bachelor Degree
             </h4>
-            <p className="p-2 bg-zinc-100">
-              <ul >
+        
+              <ul className="bg-zinc-100  p-2" >
                 <li className="bg-zinc-100 "  >4-year software engineering program completion</li>
                 <li className="bg-zinc-100">Expertise in operating systems and database design</li>
               </ul>
-            </p>
+          
           </div>
         </VerticalTimelineElement>
         <VerticalTimelineElement

@@ -49,7 +49,7 @@ const icons = [
 function Skills() {
   return (
     <div>
-      <div className="mt-10 h-auto pb-32 pt-10 ">
+      <div className="mt-10 h-auto pb-32 pt-10 " id="skills">
         <h2 className=" text-center font-bold text-4xl mt-5 mb-5 ">
           Skills 
         </h2>

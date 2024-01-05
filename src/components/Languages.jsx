@@ -4,7 +4,7 @@ import { FaCircle } from "react-icons/fa6";
 function Languages() {
   return (
     <>
-      <div className="  pt-16 pb-16">
+      <div className="  pt-16 pb-16" id="languages">
         <h2 className="  font-bold text-center text-4xl mt-20 mb-5 ">
           Languages
         </h2>
