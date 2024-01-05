@@ -4,11 +4,11 @@ import { FaCircle } from "react-icons/fa6";
 function Languages() {
   return (
     <>
-      <div className="  pt-16 pb-16" id="languages">
-        <h2 className="  font-bold text-center text-4xl mt-20 mb-5 ">
+      <div className="  md:pt-16 pb-16" id="languages">
+        <h2 className="  font-bold text-center md:text-4xl text-2xl mt-20 mb-5 ">
           Languages
         </h2>
-        <div className="flex flex-col mx-auto max-w-3xl gap-5 mt-20 mb-20 p-5  ">
+        <div className="flex flex-col mx-auto max-w-3xl gap-10 mt-20 mb-20 p-5  ">
           <div className=" md:flex text-xl md:text-3xl justify-between gap-3 ">
             <p className="text-xl md:text-2xl ">Persian (Native)</p>
             <div className="flex gap-3 items-center justify-center  ">

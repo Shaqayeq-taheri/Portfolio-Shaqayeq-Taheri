@@ -9,27 +9,11 @@ import "react-vertical-timeline-component/style.min.css";
 function BackgroundEducation() {
 
   return (
-    <div className="mt-32 pt-32" id="backgroundEducation">
+    <div className=" pt-20" id="backgroundEducation">
       
-      <h2 className="text-4xl text-center font-bold pb-28 ">Educational Background</h2>
+      <h2 className="md:text-4xl text-2xl text-center font-bold pb-10 md:pb-28 ">Educational Background</h2>
       <VerticalTimeline>
-        {/*    <VerticalTimelineElement
-          className="vertical-timeline-element--work"
-          contentStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-          contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
-          date="2024 - present"
-          iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-          icon={<WorkIcon />} 
-        >
-          <h3 className="vertical-timeline-element-title">Learn New Technologies</h3>
-          <h4 className="vertical-timeline-element-subtitle"></h4>
-          <p>
-            Creative Direction, User Experience, Visual Design, Project
-            Management, Team Leading
-          </p>
-        </VerticalTimelineElement> 
-         */}
-
+       
         <VerticalTimelineElement
           className="vertical-timeline-element--work "
           date=" Dec 2022 - Feb 2024"
@@ -37,7 +21,7 @@ function BackgroundEducation() {
           iconStyle={{ background: "#F87171", color: "#ffff" }}
           icon={<IoMdSchool fontSize={'60px'} className="bg-red-400 fill-white text-lg" />} 
         > {/* can not change the size of the icon!! */}
-          <div className="shadow-2xl bg-zinc-100 hover:shadow-lg ">
+          <div className="shadow-xl bg-zinc-100 hover:shadow-lg ">
             <h3 className="vertical-timeline-element-title p-2 bg-zinc-100 font-bold ">
               Full-Stack Web Development Course
             </h3>
@@ -65,7 +49,7 @@ function BackgroundEducation() {
           iconStyle={{ background: "#F87171", color: "#fff" }}
           icon={<IoMdSchool className="bg-red-400 fill-white" />} 
         >
-          <div className="shadow-2xl bg-zinc-100 hover:shadow-lg">
+          <div className="shadow-xl bg-zinc-100 hover:shadow-lg">
             <h3 className="vertical-timeline-element-title font-bold p-2 bg-zinc-100">
               Orientation Course for Digital Jobs
             </h3>
@@ -90,7 +74,7 @@ function BackgroundEducation() {
           iconStyle={{ background: "#F87171", color: "#fff" }}
           icon={<IoMdSchool className=" bg-red-400 fill-white" />} 
         >
-          <div className="shadow-2xl bg-zinc-100 hover:shadow-lg">
+          <div className="shadow-xl bg-zinc-100 hover:shadow-lg">
             <h3 className="vertical-timeline-element-title font-bold p-2 bg-zinc-100">
               Master of Artificial Intelligence
             </h3>
@@ -115,7 +99,7 @@ function BackgroundEducation() {
           iconStyle={{ background: "#F87171", color: "#fff" }}
           icon={<IoMdSchool className=" bg-red-400 fill-white " style={{ fontSize: '3rem' }} /> } 
         >
-          <div className="shadow-2xl bg-zinc-100 hover:shadow-lg">
+          <div className="shadow-xl bg-zinc-100 hover:shadow-lg">
             <h3 className="vertical-timeline-element-title font-bold p-2 bg-zinc-100">
               Bachelor of Computer Engineering
             </h3>

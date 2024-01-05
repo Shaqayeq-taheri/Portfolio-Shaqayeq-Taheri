@@ -60,8 +60,8 @@ const icons = [
 function Skills() {
   return (
     <div>
-      <div className="mt-10 h-auto pb-32 pt-10 " id="skills">
-        <h2 className=" text-center font-bold text-4xl mt-5 mb-5 ">
+      <div className="mt-10 h-auto pb-32 md:pt-10 " id="skills">
+        <h2 className=" text-center font-bold md:text-4xl text-2xl mt-5 mb-5 md:pb-10 pb-0">
           Skills 
         </h2>
         <Carousel
@@ -80,7 +80,7 @@ function Skills() {
           {icons.map(({icon,name},index) => (
             <div
               key={index}
-              className=" border-l border-r p-10 mb-10 flex justify-center "
+              className=" md:border-l md:border-r p-10 mb-10 flex justify-center "
             >
                <div>
                 {icon}
