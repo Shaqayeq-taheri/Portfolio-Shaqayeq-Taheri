@@ -1,6 +1,6 @@
 function Aboutme() {
   return (
-    <div className="pb-28">
+    <div className="pb-28" id="aboutme">
         <h2 className="text-4xl text-center font-bold bg-slate-400 pt-10 ">About Me</h2>
       <div className="flex items-center justify-center bg-slate-400 flex-wrap md:gap-24" style={{ height: '38rem' }} > 
          

@@ -6,7 +6,8 @@ import {
   FaBootstrap,
   FaNodeJs,
   FaGitAlt,
-  FaLinux
+  FaLinux,
+  FaSass
 } from "react-icons/fa";
 import { DiJavascript } from "react-icons/di";
 import { SiMongodb, SiInsomnia,SiExpress } from "react-icons/si";
@@ -39,14 +40,16 @@ const responsive = {
 const icons = [
   { icon: <FaHtml5 size={90} className="fill-red-500" />, name: 'HTML5' },
   { icon: <FaCss3Alt size={90} className="fill-blue-500" />, name: 'CSS3' },
+  { icon: <BiLogoTailwindCss size={90} className="fill-blue-400" />, name: 'Tailwind CSS' },
+  { icon: <FaBootstrap size={90} className="fill-purple-600" />, name: 'Bootstrap' },
+  {icon:<FaSass size={90} className=" fill-pink-400" /> ,name:'Sass'},
   { icon: <DiJavascript size={90} className="fill-yellow-500" />, name: 'JavaScript' },
   { icon: <FaReact size={90} className="fill-blue-400" />, name: 'React' },
   { icon: <SiMongodb size={90} className="fill-green-800" />, name: 'MongoDB' },
   { icon: <FaNodeJs size={90} className="fill-green-600" />, name: 'Node.js' },
   {icon:  <SiExpress  size={90}  />, name:'Express js'},
   { icon: <SiInsomnia size={90} className="fill-purple-900" />, name: 'Insomnia' },
-  { icon: <BiLogoTailwindCss size={90} className="fill-blue-400" />, name: 'Tailwind CSS' },
-  { icon: <FaBootstrap size={90} className="fill-purple-600" />, name: 'Bootstrap' },
+ 
  
   {icon:<FaGitAlt size={90} />, name:'Git'},
   {icon:<FaLinux size={90} /> ,name: 'Linux'}
@@ -70,7 +73,6 @@ function Skills() {
           autoPlay={true}
           autoPlaySpeed={4000} // Adjust the speed as needed
           swipeable={true}
-  
           customTransition="all 1s ease-out"
         
         

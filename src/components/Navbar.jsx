@@ -17,7 +17,7 @@ function Navbar() {
     {
       id: 1,
       link: "About Me",
-      path: "aboutme",
+      path: "#aboutme",
       icon: <FaUser className="bg-slate-200" />,
     },
     {
