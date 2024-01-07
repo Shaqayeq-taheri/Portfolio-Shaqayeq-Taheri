@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { Link as ScrollLink } from 'react-scroll';
 import {
   FaUser,
   FaGraduationCap,
@@ -80,39 +80,34 @@ function Navbar() {
         </div>
 
         <div
-          className={`md:flex justify-evenly p-4 font-semibold ${
-            isOpen || !isSmallScreen ? "flex-col md:flex-row gap-10 " : "hidden"
+          className={`md:flex md:justify-evenly  items-center md:h-20 h-96  font-semibold ${
+            isOpen || !isSmallScreen ? " flex flex-col justify-between pb-3 md:pb-0 md:flex-row " : "hidden"
           }`}
         >
           {links.map(({ id, link, path, icon }) => (
-            <a
-              href={path}
-              className=""
-              key={id}
-              onClick={() => {
-                setIsOpen(false);
-                setIsSmallScreen(window.innerWidth < 768);
-              }}
-            >
-              <div className="flex flex-col items-center ">
-                <span >{icon}</span>
-                <span>{link}</span>
-              </div>
-            </a>
+             <ScrollLink
+             to={path.slice(1)} // Assuming paths start with '#' followed by the section ID
+             spy={true}
+             offset={50}
+             smooth={true}
+             duration={100}
+             key={id}
+             onClick={() => {
+               setIsOpen(false);
+               setIsSmallScreen(window.innerWidth < 768);
+             }}
+           >
+             <div className="flex flex-col items-center cursor-pointer">
+               <span>{icon}</span>
+               <span>{link}</span>
+             </div>
+           </ScrollLink>
           ))}
         </div>
       </nav>
 
       {/* Media query to set the flex direction to row for larger screens */}
-      <style>
-        {`
-          @media (min-width: 768px) {
-            .md\\:flex-col.md\\:flex-row {
-              flex-direction: row;
-            }
-          }
-        `}
-      </style>
+
     </>
   );
 }
