@@ -7,68 +7,112 @@ import {
   FaEnvelope,
 } from "react-icons/fa";
 import { MdLanguage } from "react-icons/md";
-import { useState } from "react";
-import { a } from "react-spring";
+import { useState,useEffect } from "react";
+import { AiOutlineMenu } from "react-icons/ai";
+import { IoMdClose } from "react-icons/io";
 
 function Navbar() {
-  const [nav, setNav] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
+  const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth < 768);
+
 
   const links = [
     {
       id: 1,
       link: "About Me",
       path: "#aboutme",
-      icon: <FaUser className="bg-slate-200" />,
+      icon: <FaUser  />,
     },
     {
       id: 2,
       link: "Educational Background",
       path: "#backgroundEducation",
-      icon: <FaGraduationCap className="bg-slate-200" />,
+      icon: <FaGraduationCap  />,
     },
 
     {
       id: 3,
       link: "Projects",
       path: "#projects",
-      icon: <FaLaptopCode className="bg-slate-200" />,
+      icon: <FaLaptopCode  />,
     },
     {
       id: 4,
       link: "Skills",
       path: "#skills",
-      icon: <FaToolbox className="bg-slate-200" />,
+      icon: <FaToolbox  />,
     },
     {
       id: 5,
       link: "Languages",
       path: "#languages",
-      icon: <MdLanguage className="bg-slate-200" />,
+      icon: <MdLanguage  />,
     },
     {
       id: 6,
       link: "Contact Me",
       path: "#contactme",
-      icon: <FaEnvelope className="bg-slate-200" />,
+      icon: <FaEnvelope />,
     },
   ];
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
+  const handleResize = () => {
+    setIsSmallScreen(window.innerWidth < 768);
+  };
+
+  useEffect(() => {
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  useEffect(() => {
+    setIsOpen(!isSmallScreen);
+  }, [isSmallScreen]);
+
   return (
     <>
-      <nav className="flex justify-evenly gap-8 text-xl  bg-slate-200 p-4 ">
-        {links.map(({ id, link, path, icon }) => (
-          <a key={id} href={path}  className="bg-slate-200 flex flex-col items-center">
-           {icon}{link}
-          </a>
-          /*  <NavLink
-            to={path}
-            className="bg-slate-200 flex flex-col items-center"
-            key={id}
-          >
-            {icon}
-            {link}
-          </NavLink> */
-        ))}
+      <nav>
+        <div className="text-4xl cursor-pointer md:hidden flex justify-end p-4" onClick={toggleMenu}>
+          {isOpen ? <IoMdClose /> : <AiOutlineMenu />}
+        </div>
+
+        <div
+          className={`md:flex justify-evenly p-4 font-semibold ${
+            isOpen || !isSmallScreen ? "flex-col md:flex-row" : "hidden"
+          }`}
+        >
+          {links.map(({ id, link, path, icon }) => (
+            <a
+              href={path}
+              className={`md:ml-4 my-1 md:my-0 text-white hover:animate-pulse ${isOpen || !isSmallScreen ? "my-2" : ""}`}
+              key={id}
+              onClick={() => {
+                setIsOpen(false);
+                setIsSmallScreen(window.innerWidth < 768);
+              }}
+            >
+              <div className="flex flex-col items-center">
+                {icon}
+                <span>{link}</span>
+              </div>
+            </a>
+          ))}
+        </div>
       </nav>
+
+      {/* Media query to set the flex direction to row for larger screens */}
+      <style>
+        {`
+          @media (min-width: 768px) {
+            .md\\:flex-col.md\\:flex-row {
+              flex-direction: row;
+            }
+          }
+        `}
+      </style>
     </>
   );
 }

@@ -15,7 +15,7 @@ function Aboutme() {
             in IT, proficient in a range of techologies in both Front-end and
             Back-end development.{" "}
           </p>
-          <button className="md:text-xl text-gray-700  mx-auto md:mx-0 w-36 md:w-48 bg-rose-200 border hover:bg-transparent hover:border-white hover:text-white border-rose-200 hover:shadow-xl transition duration-500 ease-in-out md:p-4 p-2">
+          <button className="md:text-xl text-gray-700  mx-auto md:mx-0 w-36 md:w-48 bg-rose-200 border hover:bg-transparent hover:border-white hover:text-white border-rose-200 hover:shadow-xl transition duration-500 ease-in-out md:p-4 p-2 rounded">
             My CV
           </button>
         </div>
