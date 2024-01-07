@@ -23,7 +23,7 @@ function ContactMe() {
   }, []);
 
   return (
-    <div className= "h-screen bg-zinc-100 pt-10 pb-20" id="contactme">
+    <div className= " bg-zinc-100 pt-10 pb-20" id="contactme">
       <h5 className="md:text-4xl text-2xl  text-center bg-zinc-100 font-bold ">
         Contact Me
       </h5>
@@ -33,7 +33,7 @@ function ContactMe() {
           className="bg-zinc-100 p-10"
           alt="contact me"
         />
-        <div className="flex md:flex-col mx-auto justify-center gap-10 bg-zinc-100 md:mt-44 mt-10 mb-10 md:mb-0 pr-5 pl-5">
+        <div className="flex md:flex-col mx-auto justify-center gap-10 bg-zinc-100 md:mt-44 mt-10 md:mb-0 pr-5 pl-5">
           <a href="https://www.linkedin.com/in/shaqayeq-taheri-328697254/">
             <FaLinkedin size={iconSize} className="hover:animate-pulse bg-zinc-100" />
           </a>
