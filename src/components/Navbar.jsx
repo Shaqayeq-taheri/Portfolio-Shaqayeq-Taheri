@@ -81,21 +81,21 @@ function Navbar() {
 
         <div
           className={`md:flex justify-evenly p-4 font-semibold ${
-            isOpen || !isSmallScreen ? "flex-col md:flex-row" : "hidden"
+            isOpen || !isSmallScreen ? "flex-col md:flex-row gap-10 " : "hidden"
           }`}
         >
           {links.map(({ id, link, path, icon }) => (
             <a
               href={path}
-              className={`md:ml-4 my-1 md:my-0 text-white hover:animate-pulse ${isOpen || !isSmallScreen ? "my-2" : ""}`}
+              className=""
               key={id}
               onClick={() => {
                 setIsOpen(false);
                 setIsSmallScreen(window.innerWidth < 768);
               }}
             >
-              <div className="flex flex-col items-center">
-                {icon}
+              <div className="flex flex-col items-center ">
+                <span >{icon}</span>
                 <span>{link}</span>
               </div>
             </a>
