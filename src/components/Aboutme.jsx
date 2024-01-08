@@ -1,4 +1,4 @@
-import myImg from 'src/assets/images/myImg.jpg'
+import myImg from '/src/assets/images/myImg.jpg'
 
 function Aboutme() {
   return (

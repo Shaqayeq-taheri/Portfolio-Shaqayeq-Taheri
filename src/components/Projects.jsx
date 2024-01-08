@@ -1,6 +1,6 @@
 import { Card } from "flowbite-react";
-import BioBaumBauer from 'src/assets/images/BioBaumBauer.png'
-import YogaAndMeditation from 'src/assets/images/YogaAndMeditation.png'
+import BioBaumBauer from '/src/assets/images/BioBaumBauer.png'
+import YogaAndMeditation from '/src/assets/images/YogaAndMeditation.png'
 function Projects() {
   return (
     <div

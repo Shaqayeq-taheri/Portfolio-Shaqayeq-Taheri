@@ -1,7 +1,7 @@
 import {useState,useEffect} from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
-import contactMe from 'src/assets/images/contact.svg'
+import contactMe from '/src/assets/images/contact.svg'
 
 function ContactMe() {
   const [iconSize, setIconSize] = useState(80);
