@@ -10,14 +10,17 @@ function Aboutme() {
 
           <p className=" text-gray-100 md:text-2xl text-center md:text-left bg-slate-400 max-w-xlg">
             {" "}
+            <div className="text-gray-100 md:text-2xl text-center md:text-left bg-slate-400 max-w-xlg">Hi there!</div>
             I am Shaqayeq Taheri, Junior Full-stack Web Developer, with a strong
             background in computer engineering, over than 2 years of experience
             in IT, proficient in a range of techologies in both Front-end and
             Back-end development.{" "}
           </p>
-          <button className="md:text-xl text-gray-700  mx-auto md:mx-0 w-36 md:w-48 bg-rose-200 border hover:bg-transparent hover:border-white hover:text-white border-rose-200 hover:shadow-xl transition duration-500 ease-in-out md:p-4 p-2 rounded">
+          <a href="src/assets/files/ShaqayeqTaheriCV.pdf"  
+          download="ShaqayeqTaheriCV.pdf"
+              target="blank"className="md:text-xl text-gray-700 text-center cursor-pointer mx-auto md:mx-0 w-36 md:w-48 bg-rose-200 border hover:bg-transparent hover:border-white hover:text-white border-rose-200 hover:shadow-xl transition duration-500 ease-in-out md:p-4 p-2 rounded">
             My CV
-          </button>
+          </a>
         </div>
         <img
           src="src/assets/images/myImg.jpg"

@@ -80,17 +80,15 @@ function Navbar() {
         </div>
 
         <div
-          className={`md:flex md:justify-evenly  items-center md:h-20 h-96  font-semibold ${
+          className={`md:flex md:justify-evenly  items-center md:h-16 h-96  font-semibold ${
             isOpen || !isSmallScreen ? " flex flex-col justify-between pb-3 md:pb-0 md:flex-row " : "hidden"
           }`}
         >
           {links.map(({ id, link, path, icon }) => (
              <ScrollLink
              to={path.slice(1)} // Assuming paths start with '#' followed by the section ID
-             spy={true}
-             offset={50}
              smooth={true}
-             duration={100}
+             duration={500}
              key={id}
              onClick={() => {
                setIsOpen(false);
