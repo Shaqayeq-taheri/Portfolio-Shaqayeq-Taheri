@@ -18,7 +18,8 @@ function Projects() {
             href="https://yoga-and-meditation.netlify.app/"
           >
             <Card
-              className="max-w-lg md:h-96 h-60 shadow-2xl hover:shadow-lg hover:animate-pulse rounded-md"
+            style={{ width: '35rem' }}
+              className= " md:h-96 h-60 shadow-2xl hover:shadow-lg hover:animate-pulse rounded-md"
               imgAlt="yoga and meditation"
               imgSrc={YogaAndMeditation}
         
@@ -34,7 +35,8 @@ function Projects() {
           <a href="#"
           target="blank">
             <Card
-              className="max-w-lg md:h-96 h-60 shadow-2xl hover:shadow-lg hover:animate-pulse rounded-md"
+            style={{ width: '35rem' }}
+              className=" md:h-96 h-60 shadow-2xl hover:shadow-lg hover:animate-pulse rounded-md"
               imgAlt="tree sponsoring"
               imgSrc={BioBaumBauer}
 
