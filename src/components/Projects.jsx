@@ -11,14 +11,16 @@ function Projects() {
         Projects
       </h2>
       <div className="pb-36 pt-32 flex md:gap-28 gap-44 justify-center flex-wrap bg-zinc-100">
-        <div>
+        <div 
+           style={{ width: '35rem' }}>
+     
           <a
             target="blank"
 
             href="https://yoga-and-meditation.netlify.app/"
           >
             <Card
-            style={{ width: '35rem' }}
+        
               className= " md:h-96 h-60 shadow-2xl hover:shadow-lg hover:animate-pulse rounded-md"
               imgAlt="yoga and meditation"
               imgSrc={YogaAndMeditation}
@@ -31,11 +33,11 @@ function Projects() {
           </a>
         </div>
 
-        <div>
+        <div   style={{ width: '35rem' }}>
           <a href="#"
           target="blank">
             <Card
-            style={{ width: '35rem' }}
+           
               className=" md:h-96 h-60 shadow-2xl hover:shadow-lg hover:animate-pulse rounded-md"
               imgAlt="tree sponsoring"
               imgSrc={BioBaumBauer}
