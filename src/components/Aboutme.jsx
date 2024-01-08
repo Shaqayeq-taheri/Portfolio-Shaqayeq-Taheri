@@ -1,3 +1,5 @@
+import myImg from 'src/assets/images/myImg.jpg'
+
 function Aboutme() {
   return (
     <div className="  " id="aboutme">
@@ -23,7 +25,7 @@ function Aboutme() {
           </a>
         </div>
         <img
-          src="src/assets/images/myImg.jpg"
+          src={myImg}
           alt=""
           className="  rounded-full order-first md:order-last mb-2 mt-10 md:mt-0 md:mb-20 p-1"
           style={{ width: "200px", height: "200px" }}

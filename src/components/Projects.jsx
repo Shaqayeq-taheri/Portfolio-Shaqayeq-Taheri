@@ -1,6 +1,6 @@
 import { Card } from "flowbite-react";
-
-
+import BioBaumBauer from 'src/assets/images/BioBaumBauer.png'
+import YogaAndMeditation from 'src/assets/images/YogaAndMeditation.png'
 function Projects() {
   return (
     <div
@@ -20,7 +20,7 @@ function Projects() {
             <Card
               className="max-w-lg md:h-96 h-60 shadow-2xl hover:shadow-lg hover:animate-pulse rounded-md"
               imgAlt="yoga and meditation"
-              imgSrc="src/assets/images/YogaAndMeditation.png"
+              imgSrc={YogaAndMeditation}
         
             >
               <h5 className="text-xl p-5 text-center font-semibold tracking-tight ">
@@ -34,8 +34,8 @@ function Projects() {
           <a href="">
             <Card
               className="max-w-lg md:h-96 h-60 shadow-2xl hover:shadow-lg hover:animate-pulse"
-              imgAlt="yoga and meditation"
-              imgSrc="src/assets/images/BioBaumBauer.png"
+              imgAlt="tree sponsoring"
+              imgSrc={BioBaumBauer}
 
             >
               <h5 className="text-xl p-5 text-center font-semibold tracking-tight ">

@@ -1,6 +1,7 @@
 import {useState,useEffect} from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
+import contactMe from 'src/assets/images/contact.svg'
 
 function ContactMe() {
   const [iconSize, setIconSize] = useState(80);
@@ -29,7 +30,7 @@ function ContactMe() {
       </h5>
       <div className="flex flex-wrap gap-10 bg-zinc-100 ">
         <img
-          src="src/assets/images/contact.svg"
+          src={contactMe}
           className="bg-zinc-100 p-10"
           alt="contact me"
         />
