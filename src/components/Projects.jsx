@@ -14,7 +14,7 @@ function Projects() {
         <div>
           <a
             target="blank"
-            className=""
+
             href="https://yoga-and-meditation.netlify.app/"
           >
             <Card
@@ -31,7 +31,8 @@ function Projects() {
         </div>
 
         <div>
-          <a href="">
+          <a href="#"
+          target="blank">
             <Card
               className="max-w-lg md:h-96 h-60 shadow-2xl hover:shadow-lg hover:animate-pulse rounded-md"
               imgAlt="tree sponsoring"
