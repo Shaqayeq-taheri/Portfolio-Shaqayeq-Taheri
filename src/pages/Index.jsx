@@ -5,7 +5,7 @@ import EducationalBackground from "../components/EducationalBackground";
 import Skills from "../components/Skills";
 import Languages from "../components/Languages";
 import ContactMe from "../components/ContactMe";
-
+import BackToTopButton from "../components/BackToTopButton";
 
 function Index() {
   return (
@@ -18,6 +18,7 @@ function Index() {
       <Languages />
 
       <ContactMe />
+      <BackToTopButton />
     
     </div>
   );
