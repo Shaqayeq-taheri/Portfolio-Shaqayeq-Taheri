@@ -33,7 +33,7 @@ function Projects() {
         <div>
           <a href="">
             <Card
-              className="max-w-lg md:h-96 h-60 shadow-2xl hover:shadow-lg hover:animate-pulse"
+              className="max-w-lg md:h-96 h-60 shadow-2xl hover:shadow-lg hover:animate-pulse rounded-md"
               imgAlt="tree sponsoring"
               imgSrc={BioBaumBauer}
 

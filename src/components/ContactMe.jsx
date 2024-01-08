@@ -35,13 +35,13 @@ function ContactMe() {
           alt="contact me"
         />
         <div className="flex md:flex-col mx-auto justify-center gap-10 bg-zinc-100 md:mt-44 mt-10 pr-5 pl-5">
-          <a href="https://www.linkedin.com/in/shaqayeq-taheri-328697254/">
+          <a href="https://www.linkedin.com/in/shaqayeq-taheri-328697254/" target="blank">
             <FaLinkedin size={iconSize} className="hover:animate-pulse bg-zinc-100" />
           </a>
-          <a href="https://github.com/Shaqayeq-taheri">
+          <a href="https://github.com/Shaqayeq-taheri" target="blank">
             <FaGithub size={iconSize} className="hover:animate-pulse bg-zinc-100" />
           </a>
-          <a href="mailto:shaqayeq-taheri@gmail.com">
+          <a href="mailto:shaqayeq-taheri@gmail.com" target="blank">
             <HiOutlineMail
               size={iconSize}
               className="hover:animate-pulse bg-zinc-100"
