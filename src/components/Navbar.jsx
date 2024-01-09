@@ -21,38 +21,38 @@ function Navbar() {
       id: 1,
       link: "About Me",
       path: "#aboutme",
-      icon: <FaUser  />,
+      icon: <FaUser className='bg-zinc-200' />,
     },
     {
       id: 2,
       link: "Educational Background",
       path: "#backgroundEducation",
-      icon: <FaGraduationCap  />,
+      icon: <FaGraduationCap className='bg-zinc-200' />,
     },
 
     {
       id: 3,
       link: "Projects",
       path: "#projects",
-      icon: <FaLaptopCode  />,
+      icon: <FaLaptopCode className='bg-zinc-200' />,
     },
     {
       id: 4,
       link: "Skills",
       path: "#skills",
-      icon: <FaToolbox  />,
+      icon: <FaToolbox className='bg-zinc-200' />,
     },
     {
       id: 5,
       link: "Languages",
       path: "#languages",
-      icon: <MdLanguage  />,
+      icon: <MdLanguage  className='bg-zinc-200'/>,
     },
     {
       id: 6,
       link: "Contact Me",
       path: "#contactme",
-      icon: <FaEnvelope />,
+      icon: <FaEnvelope className='bg-zinc-200' />,
     },
   ];
   const toggleMenu = () => {
@@ -75,12 +75,12 @@ function Navbar() {
   return (
     <>
       <nav>
-        <div className="text-4xl cursor-pointer md:hidden flex justify-end p-4" onClick={toggleMenu}>
-          {isOpen ? <IoMdClose /> : <AiOutlineMenu />}
+        <div className="bg-zinc-200 text-4xl cursor-pointer md:hidden flex justify-end p-4" onClick={toggleMenu}>
+          {isOpen ? <IoMdClose className='bg-zinc-200' /> : <AiOutlineMenu className='bg-zinc-200'/>}
         </div>
 
         <div
-          className={`md:flex md:justify-evenly  items-center md:h-16 h-96  font-semibold ${
+          className={`bg-zinc-200 md:flex md:justify-evenly  items-center md:h-16 h-96  font-semibold ${
             isOpen || !isSmallScreen ? " flex flex-col justify-between pb-3 md:pb-0 md:flex-row " : "hidden"
           }`}
         >
@@ -95,9 +95,9 @@ function Navbar() {
                setIsSmallScreen(window.innerWidth < 768);
              }}
            >
-             <div className="flex flex-col items-center cursor-pointer">
-               <span>{icon}</span>
-               <span>{link}</span>
+             <div className="flex  flex-col items-center cursor-pointer bg-zinc-200">
+               <span className=' '>{icon}</span>
+               <span className='bg-zinc-200'>{link}</span>
              </div>
            </ScrollLink>
           ))}

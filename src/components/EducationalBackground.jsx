@@ -23,7 +23,7 @@ function BackgroundEducation() {
         > {/* can not change the size of the icon!! */}
           <div className="shadow-xl bg-zinc-100 hover:shadow-lg ">
             <h3 className="vertical-timeline-element-title p-2 bg-zinc-100 font-bold ">
-              Full-Stack Web Development Course
+              Full-Stack Web and Software Development Course
             </h3>
             <h4 className="vertical-timeline-element-subtitle p-2 bg-zinc-100 border-b-2">Online Course</h4>
        
