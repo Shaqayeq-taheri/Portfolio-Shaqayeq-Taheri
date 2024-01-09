@@ -35,10 +35,10 @@ function BackToTopButton() {
     <>
       {isVisible && (
         <button
-          className="fixed bottom-4 right-4 text-lg md:text-2xl  text-white rounded-full p-3 focus:outline-none animate-bounce border  transition duration-300"
+          className="fixed bottom-4 right-4 text-lg md:text-2xl p-3 rounded-full focus:outline-none animate-bounce border transition duration-300 bg-zinc-300"
           onClick={scrollToTop}
         >
-          <FaArrowUp />
+          <FaArrowUp className='bg-zinc-300' />
         </button>
       )}
     </>
