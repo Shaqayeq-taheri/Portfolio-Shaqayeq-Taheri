@@ -1,8 +1,9 @@
 import myImg from '/src/assets/images/myImg.jpg'
+import myCv from '/src/assets/files/ShaqayeqTaheriCV.pdf'
 
 function Aboutme() {
   return (
-    <div className="  " id="aboutme">
+    <div id="aboutme">
       <h2 className="md:text-4xl text-2xl text-center font-bold bg-slate-400 pt-16 ">
         About Me
       </h2>
@@ -18,7 +19,7 @@ function Aboutme() {
             in IT, proficient in a range of techologies in both Front-end and
             Back-end development.{" "}
           </p>
-          <a href="src/assets/files/ShaqayeqTaheriCV.pdf"  
+          <a href={myCv}
           download="ShaqayeqTaheriCV.pdf"
               target="blank"className="md:text-xl text-gray-700 text-center cursor-pointer mx-auto md:mx-0 w-36 md:w-48 bg-rose-200 border hover:bg-transparent hover:border-white hover:text-white border-rose-200 hover:shadow-xl transition duration-500 ease-in-out md:p-4 p-2 rounded">
             My CV
