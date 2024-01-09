@@ -41,7 +41,7 @@ function ContactMe() {
           <a href="https://github.com/Shaqayeq-taheri" target="blank">
             <FaGithub size={iconSize} className="hover:animate-pulse bg-zinc-100" />
           </a>
-          <a href="mailto:shaqayeq-taheri@gmail.com" target="blank">
+          <a href="mailto:shaqayeq.taheri@gmail.com" target="blank">
             <HiOutlineMail
               size={iconSize}
               className="hover:animate-pulse bg-zinc-100"
