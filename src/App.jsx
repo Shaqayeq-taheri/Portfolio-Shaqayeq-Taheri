@@ -1,6 +1,4 @@
-import React from "react";
 import Index from "./pages/Index";
-import Navbar from "../src/components/Navbar";
 import Aboutme from "../src/components/Aboutme";
 import Skills from "../src/components/Skills";
 import Projects from "../src/components/Projects";
@@ -8,13 +6,7 @@ import EducationalBackground from "../src/components/EducationalBackground";
 import ContactMe from "../src/components/ContactMe";
 import Languages from "./components/Languages";
 
-import {
-  BrowserRouter as Router,
-  Route,
-  Routes,
-  useLocation,
-} from "react-router-dom";
-
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
   return (
@@ -25,13 +17,12 @@ function App() {
             <Route path="/aboutme" element={<Aboutme />} />
             <Route
               path="/backgroundEducation"
-              element={<EducationalBackground/>}
+              element={<EducationalBackground />}
             />
             <Route path="/skills" element={<Skills />} />
             <Route path="/languages" element={<Languages />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/contactme" element={<ContactMe />} />
- 
           </Route>
         </Routes>
       </Router>
