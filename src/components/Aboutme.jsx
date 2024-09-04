@@ -14,10 +14,7 @@ function Aboutme() {
           <p className=" text-gray-100 md:text-2xl text-center md:text-left bg-slate-400 max-w-xlg">
             {" "}
             <div className="text-gray-100 md:text-2xl text-center md:text-left bg-slate-400 max-w-xlg">Hi there!</div>
-            I am Shaqayeq Taheri, Junior Full-stack Web Developer, with a strong
-            background in computer engineering, over than 2 years of experience
-            in IT, proficient in a range of techologies in both Front-end and
-            Back-end development.{" "}
+            I am Shaqayeq Taheri, a Junior Full-stack Web Developer with a strong background in computer engineering and over three years of experience in WordPress development, proficient in a range of technologies in both front-end and back-end development.{" "}
           </p>
           <a href={myCv}
           download="ShaqayeqTaheriCV.pdf"
