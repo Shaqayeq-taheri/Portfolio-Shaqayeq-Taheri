@@ -48,7 +48,7 @@ function Languages() {
             <div className="flex gap-3 items-center justify-center ">
               {Array.from({ length: 10 }, (_, i) => (
                 <FaCircle
-                  className={i < 5 ? "fill-red-400 " : " fill-neutral-400 "}
+                  className={i < 7 ? "fill-red-400 " : " fill-neutral-400 "}
                   key={i}
                 />
               ))}
