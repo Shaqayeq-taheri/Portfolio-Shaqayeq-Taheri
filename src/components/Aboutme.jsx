@@ -7,7 +7,7 @@ function Aboutme() {
       <h2 className="md:text-4xl text-2xl text-center font-bold bg-slate-400 pt-16 ">
         About Me
       </h2>
-      <div className="flex items-center justify-center bg-slate-400 flex-wrap md:gap-24 gap-0 h-[670px]">
+      <div className="flex items-center justify-center bg-slate-400 flex-wrap md:gap-24 gap-0 h-[480px]">
         <div className="flex flex-col justify-center p-10 md:p-5 bg-slate-400 gap-10 md:w-1/2 ">
           {/* w-1/2 means style={{width:'50%'}} */}
 
